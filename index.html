@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find and host board game sessions near you" />
+  <title>GameMeet - Board Game Sessions</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+  <!-- Modal -->
+  <div id="sessionModal" class="modal hidden" style="display:none;">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-body">
+        <img id="modalImage" class="modal-image" src="" alt="Game" />
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalGame" class="modal-meta"></p>
+          <p id="modalDate" class="modal-meta"></p>
+          <p id="modalTime" class="modal-meta"></p>
+          <p id="modalLocation" class="modal-meta"></p>
+          <p id="modalDescription" class="modal-description"></p>
+          <button id="modalJoinBtn" class="submit-btn">Join Session</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="logo">GameMeet</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="create.html">Create Session</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Find Your Next Game Night in Norway</h1>
+      <p class="hero-subtitle">Meet fellow gamers. Share epic sessions. Build lasting friendships.</p>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search games or sessions..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filters -->
+  <section class="filters" aria-label="Session filters">
+    <select id="filterType">
+      <option value="all">All Types</option>
+      <option value="Board">Board Games</option>
+      <option value="Card">Card Games</option>
+      <option value="RPG">RPGs</option>
+    </select>
+
+    <select id="filterLocation">
+      <option value="all">All Cities</option>
+      <option value="Oslo">Oslo</option>
+      <option value="Bergen">Bergen</option>
+      <option value="Stavanger">Stavanger</option>
+      <option value="Trondheim">Trondheim</option>
+      <option value="Kristiansand">Kristiansand</option>
+      <option value="Tromsø">Tromsø</option>
+      <option value="Online">Online</option>
+    </select>
+
+    <input type="date" id="filterDate" />
+  </section>
+
+  <!-- Session List -->
+  <section class="session-list" id="sessionList" aria-live="polite"></section>
+
+  <!-- Floating AI Assistant -->
+  <button id="assistantBtn" class="assistant-btn" aria-label="Open game assistant chatbot" aria-expanded="false">🤖</button>
+  <div id="assistantPopup" class="assistant-popup hidden" role="dialog" aria-labelledby="assistant-title" aria-hidden="true">
+    <div class="assistant-header">
+      <h3 id="assistant-title">Game Assistant</h3>
+      <button id="closeAssistant">✖</button>
+    </div>
+    <div id="assistantMessages" class="assistant-messages"></div>
+    <div class="assistant-input">
+      <input type="text" id="assistantInput" placeholder="Ask for game suggestions..." />
+      <button id="assistantSend">Send</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js?v=3"></script>
+</body>
+</html>
