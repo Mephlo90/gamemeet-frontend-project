@@ -9,7 +9,7 @@ The main goal of the project is to explore how a user-friendly interface can sup
 The project currently consists of three main pages:
 
 --
-##Home / Index
+Home / Index
 --
 - Displays available game sessions.
 
@@ -22,7 +22,7 @@ The project currently consists of three main pages:
 - Includes an AI-powered chatbot (using the OpenAI API) that assists users with questions and suggestions.
 
 --
-##Create Session
+Create Session
 --
 - Allows users to create their own game sessions.
 
@@ -33,7 +33,7 @@ The project currently consists of three main pages:
 - User-created sessions appear on the Home page and can be deleted.
 
 --
-##Profile
+Profile
 --
 - Simulates a user profile without a login or registration flow.
 
@@ -44,7 +44,7 @@ The project currently consists of three main pages:
 The project is intended as a functional prototype rather than a fully deployed product.
 
 ----------------------
-##Setup & Installation
+Setup & Installation
 ----------------------
 
 No complex setup is required to run this project locally.
@@ -60,7 +60,7 @@ If you want to use the AI chatbot:
 -No backend, database, or build tools are required.
 
 --------------------
-##How to Run Locally
+How to Run Locally
 --------------------
 
 Clone the repository:
@@ -87,7 +87,7 @@ Open index.html in your browser:
 Or use a Live Server extension for easier development
 
 -------------------
-##Known Limitations
+Known Limitations
 -------------------
 
 There is no backend or database; all data is stored locally using localStorage.
@@ -103,7 +103,7 @@ The AI chatbot depends on internet access and a valid OpenAI API key.
 This project is a prototype and not intended for production use.
 
 ---------------------
-##Future Improvements
+Future Improvements
 ---------------------
 Given more time and resources, the following improvements could be explored:
 
@@ -119,9 +119,9 @@ Given more time and resources, the following improvements could be explored:
 
 - Enhancing AI features with clearer transparency and user controls.
 
---
-##Technologies Used
---
+-----------------
+Technologies Used
+-----------------
 HTML5 and CSS3 for structure and styling
 
 JavaScript (ES6+) for interactivity and logic
@@ -130,9 +130,9 @@ OpenAI API for the AI-powered chatbot
 
 Git & GitHub for version control
 
---
-##Notes on AI Integration
---
+-----------------------
+Notes on AI Integration
+-----------------------
 The chatbot uses the OpenAI API to provide user assistance.
 
 API calls include error handling and fallback messaging.
